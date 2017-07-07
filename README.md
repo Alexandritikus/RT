@@ -1,7 +1,7 @@
 # RT - 42 (UNIT)
 This is a team graphic project in school 42 (UNIT), where I took an active part. The aim of the project is to create ray tracer.
 
-<img align = "center" src = "images/img_1.png" width = "100%"/>
+<img align = "center" src = "images/img_1.bmp" width = "100%"/>
 
 ### Requirements
 - linux or macos
@@ -15,6 +15,6 @@ This is a team graphic project in school 42 (UNIT), where I took an active part.
 	make
 	./RT [resolution: hd or fhd]
 
-<img align = "center" src = "images/img_2.png" width = "100%"/>
+<img align = "center" src = "images/img_2.bmp" width = "100%"/>
 
-<img align = "center" src = "images/img_3.png" width = "100%"/>
+<img align = "center" src = "images/img_3.bmp" width = "100%"/>
