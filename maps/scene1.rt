@@ -1,0 +1,56 @@
+#scene {
+	camera_position(0, 3, -6.5)
+	camera_look_at(0, 0, 1)
+	ssaa: 2
+}
+
+#plane {
+	position(0, -3, 0)
+	object_scale(20, 1, 20)
+
+}
+
+#plane {
+	position(0, 0, 8)
+	object_scale(20, 1, 20)
+	rotation(-90)
+	material
+		color_1(102,102,255)
+}
+
+#sphere {
+	position(-4, -1, 1)
+	material
+		color_1(255,0,0)
+		shininess: 100
+}
+
+#sphere {
+	position(4, -1, 1)
+	material
+		color_1(0,255,0)
+}
+
+#cylinder {
+	position(0, 0, 3)
+	object_scale(0.5, 0.5, 20)
+	rotation(90, -50, 0)
+	material
+		color_1(255,153,255)
+}
+
+#cone {
+	position(2.5, -1, 2.9)
+	object_scale(0.5, 0.5, 5)
+	rotation(90, 50, 0)
+	material
+		color_1(255,231,0)
+}
+
+#light {
+	position(-20, 20, -20)
+}
+
+#light {
+	position(20, 5, -20)
+}

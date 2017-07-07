@@ -1,0 +1,19 @@
+#scene {
+	camera_position(0, 0, -3)
+	camera_look_at(0, 0, 1)
+	ssaa: 2
+}
+
+#mesh {
+	position(0, -0.5, 0)
+    link = "maps/obj_files/teapot_n.obj"
+    material:
+        color_1(163, 192, 67)
+		color_2(253, 144, 152)
+		texture_type: marble
+		texture_scale: 30
+}
+
+#light {
+	position(0, 10, -20)
+}

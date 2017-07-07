@@ -1,0 +1,173 @@
+#scene {
+	camera_position(0, 1, -14)
+	camera_look_at(0, 1, 1)
+	ssaa: 2
+}
+
+#plane {
+	position(0, 0, 1)
+	object_scale(30, 1, 30)
+	rotation(-90)
+	material
+		color_1(180, 224, 228)
+		color_2(255, 204, 204)
+		texture_type: checkboard
+		shininess: -1
+		texture_scale: 2
+}
+
+#plane {
+	position(-2, 2.7, -7)
+	object_scale(3.8, 1.8, 3.5)
+	rotation(-90)
+	material
+		color_1(0, 0, 0)
+		texture_type: glass
+		refractive: 1
+}
+
+#plane {
+	position(2, 2.7, -7)
+	object_scale(3.8, 1.8, 3.5)
+	rotation(-90)
+	material
+		color_1(0, 0, 0)
+		texture_type: glass
+		refractive: 2
+}
+
+#plane {
+	position(-2, -1, -7)
+	object_scale(3.8, 1.8, 3.5)
+	rotation(-90)
+	material
+		color_1(0, 0, 0)
+		texture_type: glass
+		refractive: 3
+}
+
+#plane {
+	position(2, -1, -7)
+	object_scale(3.8, 1.8, 3.5)
+	rotation(-90)
+	material
+		color_1(0, 0, 0)
+		texture_type: glass
+		refractive: 7
+}
+
+#sphere {
+	position(3, -3, 0)
+	object_scale(0.85, 0.85, 0.85)
+	material
+		color_1(168, 230, 207)
+		color_2(248, 249, 189)
+		color_3(255, 0, 165)
+		texture_type: crisscross
+		texture_scale: 20
+}
+
+#sphere {
+	position(3, 5, 0)
+	material
+		color_1(123, 192, 67)
+		color_2(253, 244, 152)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#sphere {
+	position(-2, -3, 0)
+	material
+		color_1(107, 62, 38)
+		color_2(255, 197, 217)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#sphere {
+	position(5, 4, 0)
+	object_scale(1.1, 1.1, 1.1)
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 15
+}
+
+#sphere {
+	position(2, 3, 0)
+	material
+		color_1(187, 21, 21)
+		color_2(224, 205, 167)
+		texture_type: checkboard
+		texture_scale: 0.4
+}
+
+#sphere {
+	position(3, 0, 0)
+	material
+		color_1(240, 216, 23)
+		color_2(62, 179, 8)
+		texture_type: wood
+		texture_scale: 1
+}
+
+#sphere {
+	position(-4, -1, 0)
+	object_scale(1.35, 1.35, 1.35)
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 15
+}
+
+#sphere {
+	position(-5, 3, 0)
+	material
+		color_1(204, 234, 231)
+		color_2(0, 150, 136)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#sphere {
+	position(-3, 4, 0)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 2
+}
+
+#sphere {
+	position(-5, 5.5, 0)
+	material
+		color_1(204, 192, 183)
+		texture_type: shinycolor
+		texture_scale: 2
+}
+
+#sphere {
+	position(0.1, 0.5, 0)
+	object_scale(1.2, 1.2, 1.2)
+	material
+		color_1(99, 53, 160)
+		texture_type: flatcolor
+		texture_scale: 2
+}
+
+#sphere {
+	position(5, -2, 0)
+	object_scale(1.2, 1.2, 1.2)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 2
+}
+
+#light {
+    position(10, 10, -7.0)
+}

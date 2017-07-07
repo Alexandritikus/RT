@@ -1,0 +1,53 @@
+#scene {
+	camera_position(-1, 6, -8)
+	camera_look_at(0, 0, 1)
+	shadow_samples: 64
+	ssaa: 2
+	sky_box "maps/sky_box/sky/"
+}
+
+#plane {
+	position(0, -2, 10)
+	object_scale(40, 1, 40)
+	material
+		color_1(245, 255, 250)
+		texture_type: shinycolor
+}
+
+#torus {
+	rotation(200)
+	material
+        color_1(180, 224, 228)
+        texture_img: "maps/textures/earthmap1k.xpm"
+}
+
+#torus {
+	position(-2.5, 0, 0)
+	material
+		color_1(255, 215, 0)
+		color_2(233, 84, 100)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#torus {
+	position(2.5, 0, 0)
+	rotation(60)
+	material
+		color_1(108, 81, 57)
+		color_2(166, 150, 136)
+		texture_type: wood
+		texture_scale: 2
+}
+
+#union {
+	type: compose
+	rotation(0, -25, 0)
+	object_list: 1, 2, 3, 4
+}
+
+#light {
+	position(8, 4, -8)
+	intensity: 3
+	radius: 2
+}

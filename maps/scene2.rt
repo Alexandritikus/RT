@@ -1,0 +1,38 @@
+#scene {
+	camera_position(-5, 3, -10.5)
+	camera_look_at(0, 0, 1)
+	camera_rotation(0, -30, 0)
+	bg_color(255,247,173)
+	ssaa: 2
+}
+
+#plane {
+	position(0, -6, 0)
+	object_scale(40, 1, 40)
+	material
+		color_1(100,100,100)
+
+}
+
+#sphere {
+	position(-3, 0, 0)
+	object_scale(2, 2, 2)
+	material
+		color_1(102,139,139)
+		shininess: 1000
+}
+
+#light {
+	position(-9, 10, -10)
+	radius: 5
+}
+
+#light {
+	position(-4.5, 10, -10)
+	radius: 5
+}
+
+#light {
+	position(0, 10, -10)
+	radius: 5
+}

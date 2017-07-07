@@ -1,0 +1,140 @@
+#scene {
+	camera_position(0, 2, -6)
+	camera_look_at(0, 0, 1)
+	ssaa: 2
+}
+
+#plane {
+	object_scale(10, 1, 10)
+	material
+		texture_img: "maps/textures/pavement04.xpm"
+}
+
+#plane {
+	position(0, 5, 5)
+	object_scale(10, 1, 10)
+	rotation(-90)
+	material
+		texture_img: "maps/textures/masonry-wall.xpm"
+}
+
+#plane {
+	position(5, 5, 0)
+	object_scale(10, 0, 10)
+	rotation(90, 0, 90)
+	material
+		texture_img: "maps/textures/brickwork.xpm"
+}
+
+#plane {
+	object_scale(10, 10, 10)
+	material
+		texture_img: "maps/textures/pavement04.xpm"
+		texture_bump: "maps/textures/pavement04-bump.xpm"
+		bump_scale: 0.05
+}
+
+#plane {
+	position(0, 5, 5)
+	object_scale(10, 10, 10)
+	rotation(-90)
+	material
+		texture_img: "maps/textures/masonry-wall.xpm"
+		texture_bump: "maps/textures/masonry-wall-bump.xpm"
+		bump_scale: 0.05
+}
+
+#plane {
+	position(5, 5, 0)
+	object_scale(10, 10, 10)
+	rotation(90, 0, 90)
+	material
+		texture_img: "maps/textures/brickwork.xpm"
+		texture_bump: "maps/textures/brickwork-bump.xpm"
+		bump_scale: 0.05
+}
+
+
+#sphere {
+    position(0, 1, 0)
+    object_scale(2, 2, 2)
+    rotation(0, 120, 0)
+    material
+        color_1(180, 224, 228)
+        texture_img: "maps/textures/earthmap1k.xpm"
+        texture_bump: "maps/textures/earthbump1k.xpm"
+        bump_scale: 0.05
+}
+
+#sphere {
+    position(0, -1.5, 0)
+    object_scale(1.5, 0.1, 1.5)
+    material
+        color_1(180, 224, 228)
+}
+
+#cylinder {
+    position(0, 0, 0)
+    object_scale(0.05, 0.05, 3)
+    rotation(90)
+    material
+        color_1(180, 224, 228)
+}
+
+
+#sphere {
+    position(0, 1, 0)
+    object_scale(2, 2, 2)
+    rotation(0, 90, 0)
+    material
+        color_1(180, 224, 228)
+        texture_img: "maps/textures/earthmap1k.xpm"
+}
+
+#sphere {
+    position(0, -1.5, 0)
+    object_scale(1.5, 0.1, 1.5)
+    material
+        color_1(180, 224, 228)
+}
+
+#cylinder {
+    object_scale(0.05, 0.05, 3)
+    rotation(90)
+    material
+        color_1(180, 224, 228)
+}
+
+#union {
+	type: compose
+	position(-2, -1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	rotation(0, -65, 0)
+	object_list: 1 2 3
+}
+
+#union {
+	type: compose
+	position(2, -1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	rotation(0, -25, 0)
+	object_list: 4 5 6
+}
+
+#union {
+	type: compose
+	position(2, -0.5, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 7 8 9
+}
+
+#union {
+	type: compose
+	position(-2, -0.5, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 10 11 12
+}
+
+#light {
+	position(0, 20, -20)
+}

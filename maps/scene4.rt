@@ -1,0 +1,54 @@
+#scene {
+	camera_position(0, 0, -3)
+	camera_look_at(0, 0, 1)
+	max_reflections: 2
+	ssaa: 2
+}
+
+#sphere {
+	position(-1.2, -1, 0)
+	object_scale(1, 1, 1)
+	material
+		color_1(148, 219, 203)
+		color_2(0, 0, 0)
+		color_3(216, 163, 115)
+		texture_type: crisscross
+		reflectivity: 1.0
+		texture_scale: 5
+}
+
+#sphere {
+	position(1.2, -1, 0)
+	object_scale(1, 1, 1)
+	material
+		color_1(255, 215, 0)
+		color_2(233, 84, 100)
+		reflectivity: 1.0
+		texture_type: marble
+		texture_scale: 20
+}
+
+#sphere {
+	position(0, 1.5, 0)
+	object_scale(1, 1, 1)
+	material
+		color_1(0, 122, 137)
+		reflectivity: 1.0
+}
+
+#sphere {
+	position(0, 0, 4)
+	object_scale(2, 2, 2)
+	material
+		color_1(0, 0, 255)
+		color_2(255, 0, 0)
+		texture_type: wood
+		reflectivity: 1.0
+		texture_scale: 0.3
+		normal_map(0.1, 1.5)
+}
+
+
+#light {
+    position(0, 0, -10.0)
+}

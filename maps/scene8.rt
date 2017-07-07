@@ -1,0 +1,149 @@
+#scene {
+	camera_position(0, 4 -15)
+	camera_look_at(0, 0, 1)
+	max_reflections: 5
+	sky_box "maps/sky_box/space/"
+}
+
+#plane {
+	position(0, -3, 0)
+	object_scale(30, 30, 30)
+	material
+        color_1(180, 224, 228)
+}
+
+#tube {
+	position(-7, 0, 4)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#triangle {
+	position(-7, 0, -2)
+	object_scale(2, 2, 2)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#disc {
+	position(-6, 0, -4)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#sphere {
+	position(-3, 0, 4)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#cylinder {
+	position(-4, 0, 0)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#cone {
+	position(-3, 0, -4)
+	object_scale(1, 1, 1.5)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#capsule {
+	position(0, 0, 4)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#cube {
+	position(-1, 0, -1)
+	object_scale(1.5, 1.5, 1.5)
+	rotation(-30, 45)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#torus {
+	position(-1, 0, -4)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+}
+
+#sphere {
+	position(3, 0, 3)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+		texture_trans green
+}
+
+#cylinder {
+	position(6, 0, 2)
+	rotation(-30)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+		texture_trans blue
+}
+
+#disc {
+	position(3, 0, -1)
+	rotation(30, 33)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+		texture_trans red
+}
+
+#cone {
+	position(6, 0, -2)
+	rotation(30, 33)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+		texture_trans red
+}
+
+#cube {
+	position(8, 0, 2)
+	object_scale(1.5, 1.5, 1.5)
+	rotation(30, 33)
+	material
+		texture_img: "maps/textures/rgb.xpm"
+		texture_trans green
+}
+
+#plane {
+	position(2, 0, -5)
+	object_scale(2.5, 2.5, 2.5)
+	rotation(-70)
+	material
+		texture_img: "maps/textures/boba.XPM"
+		texture_cut: true
+}
+
+#plane {
+	position(4, 0, -6)
+	object_scale(2.5, 2.5, 2.5)
+	rotation(-70)
+	material
+		texture_img: "maps/textures/yoda.XPM"
+		texture_cut: true
+}
+
+#plane {
+	position(6, 0, -5)
+	object_scale(2.5, 2.5, 2.5)
+	rotation(-70)
+	material
+		texture_img: "maps/textures/veider.XPM"
+		texture_cut: true
+}
+
+#light {
+	position(0, 20, -20)
+}

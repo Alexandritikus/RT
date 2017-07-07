@@ -1,0 +1,394 @@
+#scene {
+	camera_position(0, 0 -5.5)
+	camera_look_at(0, 0, 1)
+	bg_color(105, 109, 137)
+}
+
+
+#sphere {
+	object_scale(1.3, 1.3, 1.3)
+	material
+		color_1(168, 230, 207)
+		color_2(248, 249, 189)
+		color_3(255, 0, 165)
+		texture_type: crisscross
+		texture_scale: 20
+}
+
+#cube {
+	position(-1, -1, -1)
+	object_scale(2, 2, 2)
+	material
+		color_1(123, 192, 67)
+		color_2(253, 244, 152)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#sphere {
+	object_scale(1.3, 1.3, 1.3)
+	material
+		color_1(168, 230, 207)
+		color_2(248, 249, 189)
+		color_3(255, 0, 165)
+		texture_type: crisscross
+		texture_scale: 20
+}
+
+#cube {
+	position(-1, -1, -1)
+	object_scale(2, 2, 2)
+	material
+		color_1(123, 192, 67)
+		color_2(253, 244, 152)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#sphere {
+	object_scale(1.3, 1.3, 1.3)
+	material
+		color_1(168, 230, 207)
+		color_2(248, 249, 189)
+		color_3(255, 0, 165)
+		texture_type: crisscross
+		texture_scale: 20
+}
+
+#cube {
+	position(-1, -1, -1)
+	object_scale(2, 2, 2)
+	material
+		color_1(123, 192, 67)
+		color_2(253, 244, 152)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#union {
+	type: compose
+	position(-2, 0, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 1 2
+}
+
+#union {
+	type: solid_in
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 4 3
+}
+
+#union {
+	type: solid_out
+	position(2, 0, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 5 6
+}
+
+#cylinder {
+	object_scale(1, 1, 1.5)
+	rotation(-90)
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#cylinder {
+	object_scale(0.5, 0.5, 3)
+	material
+		color_1(240, 216, 23)
+		color_2(62, 179, 8)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#cylinder {
+	object_scale(1, 1, 1.5)
+	rotation(-90)
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#cylinder {
+	object_scale(0.5, 0.5, 3)
+	material
+		color_1(240, 216, 23)
+		color_2(62, 179, 8)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#cylinder {
+	object_scale(1, 1, 1.5)
+	rotation(-90)
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#cylinder {
+	object_scale(0.5, 0.5, 3)
+	material
+		color_1(240, 216, 23)
+		color_2(62, 179, 8)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#union {
+	type: compose
+	position(-2, -1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 10 11
+}
+
+#union {
+	type: solid_in
+	position(0, -1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 12 13
+}
+
+#union {
+	type: solid_out
+	position(2, -1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 14 15
+}
+
+#sphere {
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#sphere {
+	position(1, 0, 0)
+	material
+		color_1(99, 53, 160)
+		texture_type: flatcolor
+		texture_scale: 20
+}
+
+#sphere {
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#sphere {
+	position(1, 0, 0)
+	material
+		color_1(99, 53, 160)
+		texture_type: flatcolor
+		texture_scale: 20
+}
+
+#sphere {
+	material
+		color_1(27, 161, 226)
+		color_2(240, 150, 9)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#sphere {
+	position(1, 0, 0)
+	material
+		color_1(99, 53, 160)
+		texture_type: flatcolor
+		texture_scale: 20
+}
+
+#union {
+	type: compose
+	position(-2, 1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 19 20
+}
+
+#union {
+	type: solid_in
+	position(0, 1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 21 22
+}
+
+#union {
+	type: solid_out
+	position(2, 1, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 23 24
+}
+
+
+#sphere {
+	material
+		color_1(107, 62, 38)
+		color_2(255, 197, 217)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#cone {
+	position(0, 0, 3)
+	object_scale(0.8, 0.8, 4)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 20
+}
+#sphere {
+	material
+		color_1(107, 62, 38)
+		color_2(255, 197, 217)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#cone {
+	position(0, 0, 3)
+	object_scale(0.8, 0.8, 4)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 20
+}
+#sphere {
+	material
+		color_1(107, 62, 38)
+		color_2(255, 197, 217)
+		texture_type: marble
+		texture_scale: 20
+}
+
+#cone {
+	position(0, 0, 3)
+	object_scale(0.8, 0.8, 4)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#union {
+	type: compose
+	position(-2, 2, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 28 29
+}
+
+#union {
+	type: solid_in
+	position(0, 2, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 30 31
+}
+
+#union {
+	type: solid_out
+	position(2, 2, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 32 33
+}
+
+
+#cylinder {
+	object_scale(0.5, 0.5, 4)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#cone {
+	position(0, 0, 1)
+	object_scale(1, 1, 2)
+	material
+		color_1(204, 234, 231)
+		color_2(0, 150, 136)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+#cylinder {
+	object_scale(0.5, 0.5, 4)
+	material
+		color_1(241, 194, 125)
+		color_2(255, 219, 172)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#cone {
+	position(0, 0, 1)
+	object_scale(1, 1, 2)
+	material
+		color_1(204, 234, 231)
+		color_2(0, 150, 136)
+		texture_type: turbulence
+		texture_scale: 20
+}
+
+
+#union {
+	type: compose
+	position(-2, -2, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 37 38
+}
+
+#union {
+	type: solid_in
+	position(0, -2, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 40 39
+}
+
+#cylinder {
+	object_scale(1, 1, 2)
+	rotation(-90)
+	material
+		color_1(187, 21, 21)
+		color_2(224, 205, 167)
+		texture_type: checkboard
+		texture_scale: 20
+}
+
+#cube
+	position(-0.3, -1.2, 1.5)
+	object_scale(0.5, 3, 3)
+	rotation(-90)
+	material
+		color_1(240, 216, 23)
+		color_2(62, 179, 8)
+		texture_type: wood
+		texture_scale: 20
+}
+
+#union {
+	type: solid_in
+	position(2, -2, 0)
+	union_scale(0.3, 0.3, 0.3)
+	object_list: 43 44
+}
+
+
+#light {
+	position(0, 20, -20)
+}

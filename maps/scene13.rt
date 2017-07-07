@@ -1,0 +1,18 @@
+#scene {
+	camera_position(0, 0, -5)
+	camera_look_at(0, 0, 1)
+	ssaa: 2
+}
+
+#moebius {
+	rotation(40, 15, 280)
+	material
+		color_2(255, 215, 0)
+		color_1(173, 214, 255)
+		texture_type: turbulence
+		texture_scale: 2.0
+}
+
+#light {
+	position(0, 10, -20)
+}

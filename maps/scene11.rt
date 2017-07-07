@@ -1,0 +1,130 @@
+#scene {
+	camera_position(0, 0, -30)
+	camera_look_at(0, 0, 1)
+	max_reflections: 5
+	sky_box "maps/sky_box/space/"
+}
+
+#plane {
+	position(0, 0, 3)
+	object_scale(15, 10, 10)
+	rotation(-90)
+	material
+		color_1(0, 0, 0)
+		texture_type: flatcolor
+}
+
+#plane {
+	position(-6, -2, -20)
+	object_scale(3, 3, 3)
+	rotation(-90)
+	material
+		texture_img: "maps/textures/marine.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(-4, -2, -20)
+	object_scale(3, 3, 4)
+	rotation(-90)
+	material
+		texture_img: "maps/textures/veiderrrr.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(-5, 3, -20)
+	object_scale(4, 4, 4)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/ded.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(-2.5, 3, -20)
+	object_scale(2.5, 1.5, 1.5)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/enemy ship2.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(-1.5, 1, -20)
+	object_scale(3, 2, 2)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/enemy ship2.XPM"
+		texture_slide: true
+}
+
+
+#plane {
+	position(-4.5, 0.5, -20)
+	object_scale(2, 1, 1)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/enemy ship2.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(6, -2.5, -20)
+	object_scale(2, 2, 2.5)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/r2d2.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(4, -2, -20)
+	object_scale(3, 3, 4)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/luke.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(5, 3, -20)
+	object_scale(4, 4, 4)
+	rotation(-90, 0, 180)
+	material
+		texture_img: "maps/textures/ship.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(1.5, 0.7, -20)
+	object_scale(2.5, 1.5, 1.5)
+	rotation(90, 210, 0)
+	material
+		texture_img: "maps/textures/s1.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(4.5, 0.5, -20)
+	object_scale(2, 1, 1)
+	rotation(-90, 0, 0)
+	material
+		texture_img: "maps/textures/s2.XPM"
+		texture_slide: true
+}
+
+#plane {
+	position(2.2, 2, -20)
+	object_scale(2.5, 1.5, 1.5)
+	rotation(-90, 0, 0)
+	material
+		texture_img: "maps/textures/s2.XPM"
+		texture_slide: true
+}
+
+#light {
+	type: dir_l
+	direction(0, 0, -1)
+	position(0, 20, -20)
+}

@@ -1,0 +1,64 @@
+#scene { // define scene
+	effects // optional, can be true or false by default = true
+	ssaa: // optional, antialias level, from 1 to 4; default: 1
+	max_reflections: // optional, number of maximum ray's reflection; default: 1
+	shadow_samples: // optional, number of rays for build soft shadow; default: 1
+	camera_position(x, y, z) // camera's vector posion; default(0, 0, 0)
+	camera_look_at(x, y, z) // camera's vector direction; default(0, 0, 0)
+	camera_rotation(x, y, z) // optional, camera's vector rotation; default(0, 0, 0), values in degree;
+	sky_box "link_to_sky_box_folder" //optional; sky box folder must contain six files in xpm format:
+		// back.xpm, bottom.xpm, front.xpm, left.xpm, right.xpm, top.xpm
+	bg_color(r, g, b) // r, g, b - int values 0-255 which defines red/green/blue respectively
+}
+
+#object { // instead of object must be key word which defines object type:
+		// sphere/cylinder/plane/cone/triangle/disc/capsule/tube/cube/paraboloid/torus/moebius/mesh/union
+		//mesh - polygonal object which contain .obj file
+		//union - compose object wich consist of one ore more primitives or meshes
+	position(x, y, z) //optional, object's vector position; default(0, 0, 0)
+	rotation(x, y, z) //optional, object's vector rotation; default(0, 0, 0)
+	object_scale(x, y, z) //optional, object's vector scale default(1, 1, 1)
+	link "link_to .obj file" // optional param which must be defined for mesh
+	material // optional to distinguish material's parameters from other ones
+		texture_type: "texture_type"// optional param; by default shinycolor;
+		// checkboard - use two colors;
+		// crisscross - use three colors;
+		// glass - use one color;
+		// marble - use two colors;
+		// shinycolor - use one color;
+		// turbulence - use two colors;
+		// wood - use two colors;
+		// flatcolor - use one color, whithout shininess;
+		texture_scale:  // int value which defines color mixing;
+		color_1(r, g, b) //optional, r, g, b - int values 0-255 which defines red/green/blue respectively; default (255, 255, 255) - white
+		color_2(r, g, b) //optional, r, g, b - int values 0-255 which defines red/green/blue respectively; default (0, 0, 0) - black
+		color_3(r, g, b) //optional, r, g, b - int values 0-255 which defines red/green/blue respectively; default (0, 0, 0) - black
+		shininess: //optional, int value which define size of light spot; by default = 100
+		reflectivity: //optional, reflection percent, by default material hasn't reflective features;
+		refractive: //optional, refractive percent; by default object is not refractive;
+		normal_map(a, b) // optional, parameters which imply to disturbance of the nomal
+		// a - scale, b - amount; default
+		texture_img "link to .xpm" // optional;
+		texture_slide param// optional, can be true or false; default false
+		//  uses to project on other objects
+		texture_cut param// optional, can be true or false; default false
+		//  texture uses to  define the boundary or the cut of an object
+		texture_trans param// optional, param can be "red"/"green"/"blue"
+		//  it uses to modify the transparency of an object
+		texture_bump "link to .xpm" //optional; using to modify normals of object's points
+		bump_scale: //int values that must be defined with texture bump;
+		// affect on normal changing range;
+}
+
+#light {
+	type: param//optional; by default -base_l
+	// base_l - point light without considering distance to light
+	// point_l - point light wich take into account distance to light
+	// dir_l - parallel light
+	// spot_l - direction light
+	position(x, y, z) // optional, ight's vector position; default - (0, 0, 0)
+	direction(x, y, z) //optional, light's vector position; it need to use with parallel light; default - (0, 1, 0)
+	color(r, g, b) //optional, r, g, b - int values 0-255 which defines red/green/blue respectively; default (255, 255, 255) - white
+	intensity: //optional, light's intensity; from 0 to infinity; default = 1
+	radius: //optional, use with soft shadow, difine soft shadows's power ;default = 1;
+}
